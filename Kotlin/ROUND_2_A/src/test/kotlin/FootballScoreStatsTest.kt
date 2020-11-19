@@ -1,6 +1,6 @@
 
 import org.junit.Test
-import junit.framework.Assert.assertEquals
+import org.junit.Assert.assertEquals
 
 class FootballScoreStatsTests {
     @Test
