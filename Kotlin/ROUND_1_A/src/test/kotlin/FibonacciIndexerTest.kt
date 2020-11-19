@@ -5,7 +5,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 
-open class FibbonnaciTest {
+open class FibonacciIndexerTest {
     fun findIndexOf(fibonacci: Long): Int {
         if (fibonacci >= 0 && fibonacci < 2) {
             return fibonacci.toInt()
@@ -24,7 +24,7 @@ open class FibbonnaciTest {
     }
 }
 
-class FibbonnaciEdgeCaseTest : FibbonnaciTest() {
+class FibbonnaciEdgeCaseTest : FibonacciIndexerTest() {
     @Test
     fun whenNumberNotFoundThenIndexIsMinusOne() {
         assertEquals(-1, findIndexOf(7))
@@ -37,7 +37,7 @@ class FibbonnaciEdgeCaseTest : FibbonnaciTest() {
 }
 
 @RunWith(value = Parameterized::class)
-class FibonacciIndexTest(val expectedIndex: Int, val fibonacci: Long) : FibbonnaciTest() {
+class FibonacciIndexerTestParameterized(val expectedIndex: Int, val fibonacci: Long) : FibonacciIndexerTest() {
     @Test
     fun findsIndexOfFibonacciNumber() {
         assertEquals(expectedIndex, findIndexOf(fibonacci))
