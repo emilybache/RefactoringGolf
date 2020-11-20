@@ -12,3 +12,9 @@ You should count your score as follows:
 - Double points for every change made while the code is failing the tests from the previous change.
 - Zero points for code formatting (e.g., deleting whitespace or optimizing imports).
 - Allow yourselves a maximum of two attempts at each round to determine your best score.
+
+
+Credits
+-------
+
+This code is based on an exercise designed by Jason Gorman [RefactoringGolfJava](https://github.com/jasongorman/RefactoringGolfJava)
