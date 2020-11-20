@@ -9,3 +9,4 @@ build
 .pmd
 gradle
 gradle/wrapper
+**/.idea
