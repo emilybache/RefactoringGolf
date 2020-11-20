@@ -8,10 +8,10 @@ This repo contains a number of 'rounds', each equivalent to a 'hole' of a golf g
 You should count your score as follows:
 
 - 1 point for every change made to the code using a shortcut or automated IDE feature (e.g., automated refactoring, code template, or Find/Replace).
-- 2 points for every manual edit. Note that a single “edit” could cover multiple lines of code.
+- 2 points for every manual edit. Note that a single “edit” could cover multiple lines of code, but will be in one file.
 - Double points for every change made while the code is failing the tests from the previous change.
 - Zero points for code formatting (e.g., deleting whitespace or optimizing imports).
-- Allow yourselves a maximum of two attempts at each round to determine your best score.
+- Allow yourselves two attempts at each round to determine your best score.
 
 
 Credits
