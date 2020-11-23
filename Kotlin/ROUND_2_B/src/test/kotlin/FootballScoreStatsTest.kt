@@ -6,7 +6,7 @@ class FootballScoreStatsTests {
     @Test
     fun totalsFootballScoresForTeam() {
         val data = FootballData
-        val stats = FootballScoreStats(data)
+        val stats = ScoreStats(data)
         assertEquals(6, stats.teamTotal("Liverpool"))
     }
 }
