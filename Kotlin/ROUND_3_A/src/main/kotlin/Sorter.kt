@@ -3,8 +3,7 @@ enum class SortKind {
 }
 
 class Sorter {
-    fun sort(kind: SortKind?, input: IntArray): IntArray {
-        var input = input
+    fun sort(kind: SortKind, input: IntArray): IntArray {
         when (kind) {
             SortKind.BUBBLE -> {
                 var sorted = false
@@ -19,32 +18,10 @@ class Sorter {
                         i++
                     }
                 }
-                input = quicksort(input, 0, input.size - 1)
-                var i = 0
-                while (i < input.size - 1) {
-                    var j = i + 1
-                    while (j > 0) {
-                        if (input[j] < input[j - 1]) {
-                            swap(input, j, j - 1)
-                        }
-                        j--
-                    }
-                    i++
-                }
+                return input
             }
             SortKind.QUICK -> {
-                input = quicksort(input, 0, input.size - 1)
-                var i = 0
-                while (i < input.size - 1) {
-                    var j = i + 1
-                    while (j > 0) {
-                        if (input[j] < input[j - 1]) {
-                            swap(input, j, j - 1)
-                        }
-                        j--
-                    }
-                    i++
-                }
+                return quicksort(input, 0, input.size - 1)
             }
             SortKind.INSERTION -> {
                 var i = 0
@@ -58,9 +35,9 @@ class Sorter {
                     }
                     i++
                 }
+                return input
             }
         }
-        return input
     }
 
     private fun swap(input: IntArray, index1: Int, index2: Int) {
