@@ -5,26 +5,26 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 
-open class FibonacciIndexerTest {
-    fun findIndexOf(fibonacci: Long): Int {
-        if (fibonacci >= 0 && fibonacci < 2) {
-            return fibonacci.toInt()
-        }
-        var indexOfFibonacci = -1
-        var currentIndex = 2
-        var f: Long = 0
-        val sequence: MutableList<Long> = ArrayList(Arrays.asList(0L, 1L))
-        while (f < fibonacci) {
-            f = sequence[currentIndex - 1] + sequence[currentIndex - 2]
-            if (f == fibonacci) indexOfFibonacci = currentIndex
-            sequence.add(f)
-            currentIndex++
-        }
-        return indexOfFibonacci
+
+fun findIndexOf(fibonacci: Long): Int {
+    if (fibonacci >= 0 && fibonacci < 2) {
+        return fibonacci.toInt()
     }
+    var indexOfFibonacci = -1
+    var currentIndex = 2
+    var f: Long = 0
+    val sequence: MutableList<Long> = ArrayList(Arrays.asList(0L, 1L))
+    while (f < fibonacci) {
+        f = sequence[currentIndex - 1] + sequence[currentIndex - 2]
+        if (f == fibonacci) indexOfFibonacci = currentIndex
+        sequence.add(f)
+        currentIndex++
+    }
+    return indexOfFibonacci
 }
 
-class FibbonnaciEdgeCaseTest : FibonacciIndexerTest() {
+
+class FibbonnaciEdgeCaseTest {
     @Test
     fun whenNumberNotFoundThenIndexIsMinusOne() {
         assertEquals(-1, findIndexOf(7))
@@ -37,7 +37,7 @@ class FibbonnaciEdgeCaseTest : FibonacciIndexerTest() {
 }
 
 @RunWith(value = Parameterized::class)
-class FibonacciIndexerTestParameterized(val expectedIndex: Int, val fibonacci: Long) : FibonacciIndexerTest() {
+class FibonacciIndexerTestParameterized(val expectedIndex: Int, val fibonacci: Long) {
     @Test
     fun findsIndexOfFibonacciNumber() {
         assertEquals(expectedIndex, findIndexOf(fibonacci))
