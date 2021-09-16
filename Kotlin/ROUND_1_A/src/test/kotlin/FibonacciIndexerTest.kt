@@ -24,7 +24,7 @@ fun findIndexOf(fibonacci: Long): Int {
 }
 
 
-class FibbonnaciEdgeCaseTest {
+class FibonacciEdgeCaseTest {
     @Test
     fun whenNumberNotFoundThenIndexIsMinusOne() {
         assertEquals(-1, findIndexOf(7))
