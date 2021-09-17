@@ -4,7 +4,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 
-class FibbonnaciEdgeCaseTest {
+class FibonnaciEdgeCaseTest {
     @Test
     fun whenNumberNotFoundThenIndexIsMinusOne() {
         assertEquals(-1, findIndexOf(7))
