@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ROUND_1_A", "ROUND_1_A\ROUND_1_A.csproj", "{EA84CFA6-E1EE-4ED2-BD46-B9136428E7B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ROUND_1_B", "ROUND_1_B\ROUND_1_B.csproj", "{6E7259D5-45C4-41FA-8890-01AF317A24FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA84CFA6-E1EE-4ED2-BD46-B9136428E7B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA84CFA6-E1EE-4ED2-BD46-B9136428E7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA84CFA6-E1EE-4ED2-BD46-B9136428E7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA84CFA6-E1EE-4ED2-BD46-B9136428E7B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E7259D5-45C4-41FA-8890-01AF317A24FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E7259D5-45C4-41FA-8890-01AF317A24FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E7259D5-45C4-41FA-8890-01AF317A24FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E7259D5-45C4-41FA-8890-01AF317A24FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
