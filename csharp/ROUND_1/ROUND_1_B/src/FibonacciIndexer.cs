@@ -17,7 +17,7 @@ public class FibonacciIndexer
         int indexOfFibonacci = -1;
         int currentIndex = 2;
         long f = 0;
-        List<long> sequence = BuildInitialSequencce();
+        List<long> sequence = BuildInitialSequence();
         while (f < fibonacci)
         {
             f = sequence[currentIndex - 1] + sequence[currentIndex - 2];
@@ -30,7 +30,7 @@ public class FibonacciIndexer
         return indexOfFibonacci;
     }
 
-    private static List<long> BuildInitialSequencce()
+    private static List<long> BuildInitialSequence()
     {
         return [0, 1];
     }
